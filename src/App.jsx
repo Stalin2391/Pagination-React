@@ -4,11 +4,12 @@ import './App.css'
 
 const URL = "https://dummyjson.com/products?limit=500";
 
-const ProductsCard = ({thumbnail, title}) => {
-  console.log(title)
+const ProductsCard = ({product} ) => {
+  const { title, thumbnail } = product;
+  console.log(product, "test")
   return(
     <div className='product-card'>
-        <Image src={thumbnail} alt={title} className="product-img" />
+        <img src={thumbnail} alt={title} className="product-img" />
         <span>{title}</span>
     </div>
   )
@@ -36,9 +37,8 @@ function App() {
     <div className='pagination'>
       <h3>Pagination</h3>
       <div className='product-container'>
-        {
-          products.map((product) => <ProductsCard  thumbnail={thumbnail} title={title} />)
-        }
+        {/* {products?.product?.map((product) => <ProductsCard  product={product} />)} */}
+        {products.map((product) => <ProductsCard key={product.id} product={product} />)}
       </div>
     </div>
   )
