@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/8b7e5365-74dd-47cd-9ed9-b0f16be8dcd1)
+
 # 📄 **React Pagination - Step-by-Step Guide**
 
 This guide explains how to implement basic pagination in a React application using dummy product data. The focus is on functionality, not styling. Styling can be added later when you have time or when the pagination logic is working correctly.
